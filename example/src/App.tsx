@@ -1,4 +1,4 @@
-import * as KeepAwake from 'react-native-keep-awake';
+import * as KeepAwake from '@thehale/react-native-keep-awake';
 
 import { Button, Platform, StyleSheet, Text, View } from 'react-native';
 

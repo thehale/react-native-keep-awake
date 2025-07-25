@@ -1,5 +1,5 @@
 {
-  "name": "react-native-keep-awake",
+  "name": "@thehale/react-native-keep-awake",
   "version": "0.1.0",
   "description": "Prevent the phone screen from going to sleep.",
   "main": "./lib/module/index.js",

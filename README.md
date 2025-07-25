@@ -1,6 +1,6 @@
 <div align="center">
 
-# react-native-keep-awake
+# @thehale/react-native-keep-awake
 
 Prevent the phone screen from going to sleep.
 
@@ -15,7 +15,7 @@ Prevent the phone screen from going to sleep.
 
 
 ```sh
-npm install react-native-keep-awake
+npm install @thehale/react-native-keep-awake
 ```
 
 
@@ -28,7 +28,7 @@ There are three different ways you can use this library to keep a screen from go
 Any screen that includes the `KeepAwake` component in its tree will not go to sleep.
 
 ```tsx
-import { KeepAwake } from 'react-native-keep-awake';
+import { KeepAwake } from '@thehale/react-native-keep-awake';
 
 function MyScreen() {
     return (
@@ -45,7 +45,7 @@ function MyScreen() {
 Invoking the `useKeepAwake` hook will prevent that screen from going to sleep.
 
 ```tsx
-import { useKeepAwake } from 'react-native-keep-awake';
+import { useKeepAwake } from '@thehale/react-native-keep-awake';
 
 function MyScreen() {
     useKeepAwake()
@@ -60,7 +60,7 @@ function MyScreen() {
 ### Manual Control
 
 ```tsx
-import { activate, deactivate } from 'react-native-keep-awake';
+import { activate, deactivate } from '@thehale/react-native-keep-awake';
 
 function MyScreen() {
     return (
