@@ -1,9 +1,22 @@
-import KeepAwake from './NativeKeepAwake';
+import NativeKeepAwake from './NativeKeepAwake';
+import { useEffect } from 'react';
 
 export function activate(): void {
-  KeepAwake.activate();
+  NativeKeepAwake.activate();
 }
 
 export function deactivate(): void {
-  KeepAwake.deactivate();
+  NativeKeepAwake.deactivate();
+}
+
+export function useKeepAwake(): void {
+  useEffect(() => {
+    activate();
+    return deactivate;
+  }, []);
+}
+
+export function KeepAwake() {
+  useKeepAwake();
+  return null;
 }
