@@ -21,15 +21,59 @@ npm install react-native-keep-awake
 
 ## Usage
 
+There are three different ways you can use this library to keep a screen from going to sleep
 
-```js
-import { multiply } from 'react-native-keep-awake';
+### Add a Component
 
-// ...
+Any screen that includes the `KeepAwake` component in its tree will not go to sleep.
 
-const result = multiply(3, 7);
+```tsx
+import { KeepAwake } from 'react-native-keep-awake';
+
+function MyScreen() {
+    return (
+        <View>
+            <KeepAwake />
+            <Text>This screen won't go to sleep!</Text>
+        </View>
+    )
+}
 ```
 
+### Use a Hook
+
+Invoking the `useKeepAwake` hook will prevent that screen from going to sleep.
+
+```tsx
+import { useKeepAwake } from 'react-native-keep-awake';
+
+function MyScreen() {
+    useKeepAwake()
+    return (
+        <View>
+            <Text>This screen won't go to sleep!</Text>
+        </View>
+    )
+}
+```
+
+### Manual Control
+
+```tsx
+import { activate, deactivate } from 'react-native-keep-awake';
+
+function MyScreen() {
+    return (
+        <View>
+            <Text>Press this button to block the screen from going to sleep</Text>
+            <Button title="Activate" onPress={activate} />
+            
+            <Text>Press this button to allow the screen to sleep/lock</Text>
+            <Button title="Deactivate" onPress={deactivate} />
+        </View>
+    )
+}
+```
 
 ## Contributing
 
