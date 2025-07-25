@@ -1,4 +1,5 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+
 import { multiply } from 'react-native-keep-awake';
 
 const result = multiply(3, 7);
@@ -13,6 +14,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#fff',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
