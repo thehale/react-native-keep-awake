@@ -1,13 +1,15 @@
+import * as KeepAwake from 'react-native-keep-awake';
+
 import { StyleSheet, Text, View } from 'react-native';
 
-import { multiply } from 'react-native-keep-awake';
-
-const result = multiply(3, 7);
-
 export default function App() {
+  KeepAwake.activate();
+  KeepAwake.deactivate();
+  const result = KeepAwake.isActive();
+  console.log('KeepAwake is active:', result);
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Is KeepAwake active? {result ? 'yes' : 'no'}</Text>
     </View>
   );
 }
