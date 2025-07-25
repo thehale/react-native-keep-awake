@@ -1,32 +1,38 @@
 package com.keepawake
 
+import android.util.Log
+import android.view.WindowManager
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
-import android.util.Log
 
 @ReactModule(name = KeepAwakeModule.NAME)
 class KeepAwakeModule(reactContext: ReactApplicationContext) :
   NativeKeepAwakeSpec(reactContext) {
 
+  private val context = reactContext
+
   override fun getName(): String {
     return NAME
   }
 
-
+  /**
+   * Stops the screen from dimming or locking
+   */
   override fun activate() {
-    // Implementation to keep the device awake
-    Log.d(NAME, "activate")
+    Log.d(NAME, "Activating KeepAwake")
+    context.currentActivity?.runOnUiThread {
+      context.currentActivity?.window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+    }
   }
 
+  /**
+   * Allows the screen to dim or lock
+   */
   override fun deactivate() {
-    // Implementation to allow the device to sleep
-    Log.d(NAME, "deactivate")
-  }
-
-  override fun isActive(): Boolean {
-    // Implementation to check if the device is set to stay awake
-    Log.d(NAME, "isActive")
-    return false
+    Log.d(NAME, "Deactivating KeepAwake")
+    context.currentActivity?.runOnUiThread {
+      context.currentActivity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+    }
   }
 
   companion object {

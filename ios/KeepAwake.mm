@@ -5,19 +5,19 @@ RCT_EXPORT_MODULE()
 
 
 - (void)activate {
-    // Implementation for activating the keep awake functionality
-    NSLog(@"KeepAwake activated");
+    // Stops the screen from dimming or locking
+    NSLog(@"Activating KeepAwake");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    });
 }
 
 - (void)deactivate {
-    // Implementation for deactivating the keep awake functionality
-    NSLog(@"KeepAwake deactivated");
-}
-
-- (BOOL)isActive {
-    // Implementation to check if the keep awake functionality is active
-    NSLog(@"Checking if KeepAwake is active");
-    return NO;
+    // Allows the screen to dim or lock
+    NSLog(@"Deactivating KeepAwake");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+    });
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:

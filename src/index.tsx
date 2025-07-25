@@ -7,7 +7,3 @@ export function activate(): void {
 export function deactivate(): void {
   KeepAwake.deactivate();
 }
-
-export function isActive(): boolean {
-  return KeepAwake.isActive();
-}
