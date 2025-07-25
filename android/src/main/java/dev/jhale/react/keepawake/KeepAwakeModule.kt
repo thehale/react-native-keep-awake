@@ -1,4 +1,4 @@
-package com.keepawake
+package dev.jhale.react.keepawake
 
 import android.util.Log
 import android.view.WindowManager

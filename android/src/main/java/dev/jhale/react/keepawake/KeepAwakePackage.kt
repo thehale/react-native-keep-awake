@@ -1,4 +1,4 @@
-package com.keepawake
+package dev.jhale.react.keepawake
 
 import com.facebook.react.BaseReactPackage
 import com.facebook.react.bridge.NativeModule

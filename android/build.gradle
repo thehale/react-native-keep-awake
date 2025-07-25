@@ -26,7 +26,7 @@ def getExtOrIntegerDefault(name) {
 }
 
 android {
-  namespace "com.keepawake"
+  namespace "dev.jhale.react.keepawake"
 
   compileSdkVersion getExtOrIntegerDefault("compileSdkVersion")
 
@@ -79,5 +79,5 @@ dependencies {
 react {
   jsRootDir = file("../src/")
   libraryName = "KeepAwake"
-  codegenJavaPackageName = "com.keepawake"
+  codegenJavaPackageName = "dev.jhale.react.keepawake"
 }

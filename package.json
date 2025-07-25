@@ -154,7 +154,7 @@
     "type": "modules",
     "jsSrcsDir": "src",
     "android": {
-      "javaPackageName": "com.keepawake"
+      "javaPackageName": "dev.jhale.react.keepawake"
     }
   },
   "create-react-native-library": {
