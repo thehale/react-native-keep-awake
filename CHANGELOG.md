@@ -1,0 +1,21 @@
+# Changelog
+
+## 0.2.0 (2025-07-26)
+
+* build: add personal `thehale` namespace ([49844d3](https://github.com/thehale/react-native-keep-awake/commit/49844d3))
+* build: change package name to `dev.jhale.react.keepawake` ([749f894](https://github.com/thehale/react-native-keep-awake/commit/749f894))
+* build: configure release tooling ([d693d68](https://github.com/thehale/react-native-keep-awake/commit/d693d68))
+* build: fix typescript package alias ([3b9c0b6](https://github.com/thehale/react-native-keep-awake/commit/3b9c0b6))
+* build: mark as a public package on npm ([81dfb2b](https://github.com/thehale/react-native-keep-awake/commit/81dfb2b))
+* build: use Ruby 3.4.0 or later locally ([1ef7680](https://github.com/thehale/react-native-keep-awake/commit/1ef7680))
+* refactor: simplify example code ([9d9eb06](https://github.com/thehale/react-native-keep-awake/commit/9d9eb06))
+* docs: add compatibility and credits to README ([796df1e](https://github.com/thehale/react-native-keep-awake/commit/796df1e))
+* docs: Add my standard README header ([1f5a332](https://github.com/thehale/react-native-keep-awake/commit/1f5a332))
+* docs: add usage instructions to README ([666b2a0](https://github.com/thehale/react-native-keep-awake/commit/666b2a0))
+* feat: add hook and component ([94946f4](https://github.com/thehale/react-native-keep-awake/commit/94946f4))
+* feat: implement keep awake on Android/iOS ([d788f88](https://github.com/thehale/react-native-keep-awake/commit/d788f88))
+* feat: scaffold Keep Awake API ([6966a6b](https://github.com/thehale/react-native-keep-awake/commit/6966a6b))
+* fix(example): use white background ([d3f9af0](https://github.com/thehale/react-native-keep-awake/commit/d3f9af0))
+* chore: Change license to MPL-2.0 ([2dac89c](https://github.com/thehale/react-native-keep-awake/commit/2dac89c))
+* chore: generate lockfiles and other initial run metadata ([10a27e3](https://github.com/thehale/react-native-keep-awake/commit/10a27e3))
+* chore: scaffold react-native-keep-awake ([59d472b](https://github.com/thehale/react-native-keep-awake/commit/59d472b))
