@@ -1,6 +1,5 @@
-import * as KeepAwake from '@thehale/react-native-keep-awake';
-
 import { Button, Platform, StyleSheet, Text, View } from 'react-native';
+import { activate, deactivate } from '@thehale/react-native-keep-awake';
 
 export default function App() {
   return (
@@ -22,18 +21,8 @@ export default function App() {
           </Text>
         )}
       </View>
-      <Button
-        title="Activate"
-        onPress={() => {
-          KeepAwake.activate();
-        }}
-      />
-      <Button
-        title="Deactivate"
-        onPress={() => {
-          KeepAwake.deactivate();
-        }}
-      />
+      <Button title="Activate" onPress={activate} />
+      <Button title="Deactivate" onPress={deactivate} />
     </View>
   );
 }
