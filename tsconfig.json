@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-keep-awake": ["./src/index"]
+      "@thehale/react-native-keep-awake": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
