@@ -18,10 +18,14 @@ Prevent the phone screen from going to sleep.
 npm install @thehale/react-native-keep-awake
 ```
 
+## Compatibility
+
+React Native 0.78.0+ (New Architecture only)
+
 
 ## Usage
 
-There are three different ways you can use this library to keep a screen from going to sleep
+There are three different ways you can use this library to keep a screen from going to sleep.
 
 ### Add a Component
 
@@ -83,6 +87,9 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 Copyright (c) 2025 Joseph Hale, All Rights Reserved
 
 Provided under the terms of the [Mozilla Public License, version 2.0](./LICENSE)
+
+> [!NOTE]
+> This package is a rewrite of [`react-native-keep-awake`](https://github.com/corbt/react-native-keep-awake) and [`@sayem314/react-native-keep-awake`](https://github.com/sayem314/react-native-keep-awake) which are licensed under the MIT license.
 
 <details>
 
